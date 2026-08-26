@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Macondo Photo Project — Photography</title>
+<meta name="description" content="Macondo Photo Project — a photography portfolio by [Your Name]: documentary projects, collections and loose shots.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-title" href="index.html">Macondo Photo Project<small>Documentary photography</small></a>
+    <nav class="site-nav">
+      <a href="index.html" aria-current="page">Projects</a>
+      <a href="collezioni/index.html">Collections</a>
+      <a href="sciolti.html">Loose shots</a>
+      <a href="biografia.html">Bio</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="board-intro">
+    <div class="eyebrow">Macondo Photo Project</div>
+    <h1>Photographs from the province, one platform at a time.</h1>
+  </section>
+
+  <h2 class="board-section-title">Projects</h2>
+  <div class="board" role="list">
+
+    <a class="board-row" role="listitem" href="progetti/linea-est.html">
+      <span class="board-code">01</span>
+      <span class="board-name">Eastern Line
+        <span class="sub">Stations and villages towards Trier</span>
+      </span>
+      <span class="board-status attivo">In progress</span>
+      <span class="board-arrow">→</span>
+    </a>
+
+    <a class="board-row" role="listitem" href="progetti/tesi.html">
+      <span class="board-code">00</span>
+      <span class="board-name">[Thesis title]
+        <span class="sub">Graduation project, BA Photography</span>
+      </span>
+      <span class="board-status futuro">Archive</span>
+      <span class="board-arrow">→</span>
+    </a>
+
+    <div class="board-row is-disabled" role="listitem">
+      <span class="board-code">02</span>
+      <span class="board-name">—
+        <span class="sub">Next documentary project</span>
+      </span>
+      <span class="board-status futuro">Coming up</span>
+      <span class="board-arrow">·</span>
+    </div>
+
+  </div>
+
+  <h2 class="board-section-title">Collections</h2>
+  <div class="board" role="list">
+
+    <a class="board-row" role="listitem" href="collezioni/index.html">
+      <span class="board-code">C1</span>
+      <span class="board-name">All collections
+        <span class="sub">Series of photographs that aren't standalone projects</span>
+      </span>
+      <span class="board-status attivo">Browse</span>
+      <span class="board-arrow">→</span>
+    </a>
+
+  </div>
+
+  <h2 class="board-section-title">Loose shots</h2>
+  <div class="board" role="list">
+
+    <a class="board-row" role="listitem" href="sciolti.html">
+      <span class="board-code">S</span>
+      <span class="board-name">Loose shots
+        <span class="sub">Single images, with no project behind them</span>
+      </span>
+      <span class="board-status attivo">Browse</span>
+      <span class="board-arrow">→</span>
+    </a>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; width:100%;">
+    <span>© <span id="year"></span> Macondo Photo Project</span>
+    <span><a href="mailto:your@email.com">your@email.com</a></span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
