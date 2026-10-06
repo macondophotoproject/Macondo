@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Collection title] — Macondo Photo Project</title>
+<meta name="description" content="[Collection title]: a photo collection by Macondo Photo Project.">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-title" href="../index.html">Macondo Photo Project<small>Documentary photography</small></a>
+    <nav class="site-nav">
+      <a href="../index.html">Projects</a>
+      <a href="index.html" aria-current="page">Collections</a>
+      <a href="../sciolti.html">Loose shots</a>
+      <a href="../biografia.html">Bio</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="page-header">
+    <div class="eyebrow">Collection</div>
+    <h1>[Collection title]</h1>
+    <p class="dek">[Short description: what ties these images together — a theme, a place, a period.]</p>
+  </div>
+
+  <div class="loose-grid">
+    <div class="thumb">Photo 1</div>
+    <div class="thumb">Photo 2</div>
+    <div class="thumb">Photo 3</div>
+    <div class="thumb">Photo 4</div>
+    <!-- Copy <div class="thumb">...</div> (or <img>) to add more photos -->
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <span>© <span id="year"></span> Macondo Photo Project</span>
+  <span><a href="../biografia.html">Bio</a></span>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

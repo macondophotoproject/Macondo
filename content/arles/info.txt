@@ -1,0 +1,4 @@
+title: Arles il viaggio
+subtitle: A photographic project made in Arles, France in 2012
+status: archive
+description: Nel 2012 ho trascorso due settimane ad Arles fotografando [...]. Il progetto esplora [...].
