@@ -95,15 +95,18 @@ img{display:block;max-width:100%}
 .todo{color:var(--muted);font-style:italic}
 
 /* Contact */
-.contact{margin-top:28px}
-.contact label{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.02em;margin:0 0 22px}
-.contact input[type=text],.contact input[type=email],.contact textarea{display:block;width:100%;box-sizing:border-box;margin-top:6px;font:inherit;font-size:16px;text-transform:none;letter-spacing:0;color:var(--fg);background:transparent;border:0;border-bottom:1px solid var(--rule);border-radius:0;padding:6px 0;outline:0;resize:vertical}
-.contact input:focus,.contact textarea:focus{border-bottom-width:2px;padding-bottom:5px}
-.contact button{font:inherit;font-size:13px;text-transform:uppercase;letter-spacing:.06em;background:var(--bar);color:var(--bar-fg);border:0;border-radius:0;padding:11px 34px;cursor:pointer}
+.contact-wrap{max-width:640px;margin:0 auto;padding:0 16px}
+.contact-intro{text-align:center;font-size:15px;margin:34px auto 46px;max-width:var(--col)}
+.contact input[type=text],.contact input[type=email],.contact textarea{display:block;width:100%;box-sizing:border-box;margin:0 0 -1px;font:inherit;font-size:16px;color:var(--fg);background:transparent;border:1px solid var(--muted);border-radius:0;padding:14px 14px;outline:0;-webkit-appearance:none;appearance:none}
+.contact textarea{min-height:200px;resize:vertical}
+.contact ::placeholder{color:var(--muted);opacity:1}
+.contact input:focus,.contact textarea:focus{border-color:var(--fg);position:relative}
+.contact button{display:block;margin-top:20px;font:inherit;font-size:15px;color:var(--fg);background:transparent;border:1px solid var(--muted);border-radius:3px;padding:12px 28px;cursor:pointer}
+.contact button:hover{border-color:var(--fg)}
 .contact button[disabled]{opacity:.5;cursor:default}
 .contact .hp{position:absolute;left:-9999px;opacity:0}
-.contact .status{font-style:italic;min-height:1.4em;margin:16px 0 0}
-.contact .privacy{color:var(--muted);font-size:12px;text-align:left;margin-top:26px}
+.contact .status{font-style:italic;font-size:14px;min-height:1.4em;margin:16px 0 0}
+.contact .privacy{color:var(--muted);font-size:12px;margin:22px 0 0}
 
 /* Footer */
 .site-foot{text-align:center;padding:80px 16px 48px;font-size:12px}
