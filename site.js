@@ -52,3 +52,18 @@
     addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(k-1);if(e.key==='ArrowRight')show(k+1)});
   }
 })();
+
+(function(){
+  const f=document.getElementById('contact-form');if(!f)return;
+  const st=document.getElementById('contact-status'),b=f.querySelector('button');
+  f.addEventListener('submit',async e=>{
+    e.preventDefault();b.disabled=true;st.textContent='Sending…';
+    try{
+      const r=await fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)});
+      const d=await r.json();
+      if(r.ok&&d.success){f.reset();st.textContent='Thank you — your message has been sent.'}
+      else{st.textContent='Sorry, the message could not be sent. Please try again later.'}
+    }catch(_){st.textContent='Sorry, the message could not be sent. Please try again later.'}
+    b.disabled=false;
+  });
+})();

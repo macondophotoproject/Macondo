@@ -94,6 +94,17 @@ img{display:block;max-width:100%}
 .about p{text-align:justify;hyphens:auto;font-size:15px;margin:0 0 14px}
 .todo{color:var(--muted);font-style:italic}
 
+/* Contact */
+.contact{margin-top:28px}
+.contact label{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.02em;margin:0 0 22px}
+.contact input[type=text],.contact input[type=email],.contact textarea{display:block;width:100%;box-sizing:border-box;margin-top:6px;font:inherit;font-size:16px;text-transform:none;letter-spacing:0;color:var(--fg);background:transparent;border:0;border-bottom:1px solid var(--rule);border-radius:0;padding:6px 0;outline:0;resize:vertical}
+.contact input:focus,.contact textarea:focus{border-bottom-width:2px;padding-bottom:5px}
+.contact button{font:inherit;font-size:13px;text-transform:uppercase;letter-spacing:.06em;background:var(--bar);color:var(--bar-fg);border:0;border-radius:0;padding:11px 34px;cursor:pointer}
+.contact button[disabled]{opacity:.5;cursor:default}
+.contact .hp{position:absolute;left:-9999px;opacity:0}
+.contact .status{font-style:italic;min-height:1.4em;margin:16px 0 0}
+.contact .privacy{color:var(--muted);font-size:12px;text-align:left;margin-top:26px}
+
 /* Footer */
 .site-foot{text-align:center;padding:80px 16px 48px;font-size:12px}
 
